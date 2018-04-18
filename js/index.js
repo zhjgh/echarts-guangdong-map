@@ -3,7 +3,7 @@ function randomData(){
 }
 
 var mapChart = echarts.init(document.getElementById("map"));
-var serverUrl = "http://120.77.240.86:7070/";
+var serverUrl = "https://zhjgh.github.io/echarts-guangdong-map/";
 var timeType = "";
 var geoCoordMap = {};
 var cityData = [{
@@ -164,7 +164,7 @@ var Screen = (function (index) {
         getMapData: function (timeType) {
             let _this = this;
 
-            $.get('../map/json/guangdong.json', function (data) {
+            $.get(serverUrl + 'map/json/guangdong.json', function (data) {
 
                 echarts.registerMap("广东", data);
 
