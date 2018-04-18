@@ -164,7 +164,7 @@ var Screen = (function (index) {
         getMapData: function (timeType) {
             let _this = this;
 
-            $.get(serverUrl + 'map/json/guangdong.json', function (data) {
+            $.get('https://zhjgh.github.io/echarts-guangdong-map/map/json/guangdong.json', function (data) {
 
                 echarts.registerMap("广东", data);
 
